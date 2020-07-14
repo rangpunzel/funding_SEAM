@@ -1,0 +1,16 @@
+package com.funding.service.admin;
+
+import java.sql.SQLException;
+import java.util.Map;
+
+import com.funding.request.AdminSearchCriteria;
+
+public interface AdminComMemberManageService {
+
+	//소상공인 회원 목록 + 검색
+	Map<String, Object> getSearchComMemberList(AdminSearchCriteria cri) throws SQLException;
+	
+	//소상공인 회원 가입 신청 수
+	int getRoleComHoldTotalCount() throws SQLException;
+		
+}
